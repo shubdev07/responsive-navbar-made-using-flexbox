@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid skyblue;
+    transition: all .4s ease-out;
+}
+
+a:hover {
+    color: skyblue;
+    border-bottom-color: blue;
+}
+
+@media screen and (max-width:920px) {
+    nav {
+        justify-content: space-around
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+    }
+    a {
+        margin: 10px;
+        color: teal;
+        border-bottom-color: black;
+    }
+
+}
